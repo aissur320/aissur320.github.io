@@ -1,0 +1,152 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 54%, 90%);
+    /* height: 100vh; */
+}
+
+.young-serif-regular {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.outfit-font {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+#main{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    width: 50%;
+    height: 150%;
+}
+
+#main-image{
+    width: 100%;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#preparation{
+    width: 95%;
+    background-color: hsl(330, 100%, 98%);
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+#pre{
+    padding-left: 1.5em;
+}
+
+#pre li::marker{
+    /* font-size: 80%; */
+    color: hsl(332, 51%, 32%);
+}
+
+#pre li{
+    margin-left: 0.5em;
+}
+
+#ing{
+    list-style-type: square;
+    padding-left: 1.5em;
+}
+
+#ing li::marker{
+    /* font-size: 80%; */
+    color: hsl(14, 45%, 36%);
+}
+
+#ing li{
+    margin-left: 0.5em;
+}
+
+#ins{
+    padding: 1.5em;
+}
+
+#ins li::marker{
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+}
+
+#nut{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#nut tr{
+    border-bottom:1px solid hsl(30, 10%, 50%);
+    margin: 50px;
+}
+
+#nut tr:last-child{
+    border-bottom: none;
+}
+
+#nut td{
+    padding: 10px 0;
+}
+
+h3{
+    color: hsl(332, 51%, 32%);
+}
+
+h2{
+    color: hsl(14, 45%, 36%);
+}
+
+p{
+    font-weight: 400;
+    font-size: 16px;
+    color: hsl(30, 10%, 34%);
+}
+
+li{
+    font-size: 400;
+    color: hsl(30, 10%, 34%);
+    margin-bottom: 10px;
+}
+
+ol{
+    font-size: 400;
+    color: hsl(30, 10%, 34%);
+    margin-bottom: 10px;
+}
+
+h3{
+    font-weight: 600;
+}
+
+td{
+    font-size: 400;
+    color: hsl(30, 10%, 34%);
+}
+
+span{
+    font-weight: 700;
+}
+
+@media (max-width: 375px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 1439px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    font-size: 18px;
+  }
+}
