@@ -41,7 +41,7 @@ body{
 }
 
 #pre{
-    padding-left: 1.5em;
+    padding-left: 1.25rem;
 }
 
 #pre li::marker{
@@ -50,12 +50,12 @@ body{
 }
 
 #pre li{
-    margin-left: 0.5em;
+    padding: 0.4rem 1rem;
 }
 
 #ing{
     list-style-type: square;
-    padding-left: 1.5em;
+    padding-left: 1.25rem;
 }
 
 #ing li::marker{
@@ -64,16 +64,20 @@ body{
 }
 
 #ing li{
-    margin-left: 0.5em;
+    padding: 0.4rem 1rem;
 }
 
 #ins{
-    padding: 1.5em;
+    padding-left: 1.5em;
 }
 
 #ins li::marker{
     color: hsl(14, 45%, 36%);
     font-weight: 700;
+}
+
+#ins li{
+    padding: 0.4rem 1rem;
 }
 
 #nut{
@@ -109,13 +113,13 @@ p{
 }
 
 li{
-    font-size: 400;
+    font-weight: 400;
     color: hsl(30, 10%, 34%);
     margin-bottom: 10px;
 }
 
 ol{
-    font-size: 400;
+    font-weight: 400;
     color: hsl(30, 10%, 34%);
     margin-bottom: 10px;
 }
@@ -125,7 +129,7 @@ h3{
 }
 
 td{
-    font-size: 400;
+    font-weight: 400;
     color: hsl(30, 10%, 34%);
 }
 
