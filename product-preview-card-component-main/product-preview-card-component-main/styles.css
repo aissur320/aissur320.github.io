@@ -1,0 +1,120 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100%;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.fraunces {
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+        "SOFT" 0,
+        "WONK" 0;
+}
+
+#main{
+    width: 95%;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#main-image{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#main-text{
+    padding: 20px;
+}
+
+h4{
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 0.4em;
+}
+
+h2{
+    color: hsl(212, 21%, 14%);
+    font-size: 2em;
+}
+
+p{
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+}
+
+#price-discount{
+    color: hsl(158, 36%, 37%);
+    font-size: 2em;
+    padding-right: 10px;
+    vertical-align: middle; /* make the row-center of the span in the same height */
+}
+
+#price-standard{
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    vertical-align: middle; /* make the row-center of the span in the same height */
+}
+
+button{
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    display: block;
+    margin: 10px auto;
+    padding: 5% 30%;
+    gap: 8px;
+}
+
+button:active{
+    background-color: hsl(158, 42%, 18%);
+}
+
+button span {
+    font-size: 1em;
+    display: inline-flex;
+    align-items: center;
+}
+
+footer {
+    text-align: center;
+}
+
+@media (min-width: 775px) {
+    #main{
+        width: 800px;
+        height: 550px;
+        display: flex;
+        align-items: center;
+        font-size: 1.3em;
+    }
+
+    #main-image{
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+    }
+
+    #main-text{
+        width: 50%;
+    }
+}
