@@ -1,0 +1,137 @@
+:root{
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --grey-500: hsl(234, 12%, 34%);
+    --grey-400: hsl(212, 6%, 44%);
+}
+
+.poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+body{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+#text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#text p,
+#text h2{
+    max-width: 500px;
+    width: 90%;
+    align-self: center;
+    text-align: center;
+    color: var(--grey-500);
+    margin: 5px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+p{
+    font-size: 15px;
+}
+
+#boxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 20px;
+}
+
+#boxes h4{
+    font-size: 20px;
+    margin: 5px;
+}
+
+#column1,
+#Team,
+#Karma,
+#column3{
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+    width: 300px;
+    background-color: white;
+    padding: 24px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    color: var(--grey-500);
+}
+
+#column1 img,
+#Team img,
+#Karma img,
+#column3 img{
+    align-self: flex-end;
+    margin: 10px;
+}
+
+#column1{
+    border-top: 5px solid var(--cyan);
+    flex-shrink: 1;
+}
+
+#column2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 430px;
+    gap: 30px;
+    flex-shrink: 1;
+}
+
+#Team{
+    border-top: 5px solid var(--red);
+    flex-shrink: 1;
+}
+
+#Karma{
+    border-top: 5px solid var(--orange);
+    flex-shrink: 1;
+}
+
+
+#column3{
+    border-top: 5px solid var(--blue);
+    flex-shrink: 1;
+}
+
+footer {
+    text-align: center;
+}
+
+@media (max-width: 450px) {
+  #boxes {
+    flex-direction: column;
+  }
+}
