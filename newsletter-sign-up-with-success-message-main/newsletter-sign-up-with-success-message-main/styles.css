@@ -1,0 +1,142 @@
+:root{
+    --red: hsl(4, 100%, 67%);
+    --blue8: hsl(234, 29%, 20%);
+    --blue7: hsl(235, 18%, 26%);
+    --grey: hsl(0, 0%,58%);
+    --pink: hsl(5, 100%, 90%);
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+body{
+    background-color: var(--blue7);
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    border-radius: 30px;
+    width: 65%;
+    height: auto;
+    overflow: hidden;
+}
+
+#main-content{
+    padding: 30px;
+    color: var(--blue8);
+    width: 600px;
+    align-self: center;
+}
+
+.wrapper{
+    display: flex;
+    align-items: center; /* 垂直居中 */
+    gap: 8px;
+    padding: 5px;
+}
+
+h1{
+    font-weight: 700;
+}
+
+p{
+    font-weight: 400;
+}
+
+.wrapper > span{
+    font-weight: 400;
+}
+
+#span-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#label{
+    font-weight: 700;
+}
+
+#newSpan{
+    font-weight: 700;
+}
+
+input{
+    font-weight: 400;
+    color: var(--blue8);
+    border: 1px solid var(--grey);
+    border-radius: 5px;
+    width: 95%;
+    height: 40px;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+input::placeholder{
+    color: var(--grey);
+}
+
+input:focus{
+    outline: none;
+}
+
+button{
+    font-weight: 700;
+    background-color: var(--blue8);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+}
+
+#main-img{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-right: 3%;
+    height: 80vh;
+}
+
+@media screen and (max-width: 500px){
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
+
+    #main{
+        width: 100vw;
+        flex-direction: column;
+        border-radius: 0%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #main-content{
+        padding: 10px;
+        width: 80%;
+    }
+
+    #main-img{
+        padding-top: 0;
+        padding-bottom: 3%;
+        padding-right: 0;
+        top: 0;
+        height: auto;
+    }
+}
