@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; color: white;}
+    .attribution a { color: var(--purple600); }
+  </style>
+</head>
+<body class="rubik">
+
+  <div id="main">
+
+    <div id="head-info">
+
+      <div id="user">
+
+        <img id="user-avatar" src="./images/image-jeremy.png" alt="user-avatar">
+
+        <br>
+
+        <div>
+
+          <span id="report">Report for</span>
+
+          <br>
+
+          <span id="user-name">Jeremy Robson</span>
+
+        </div>
+
+      </div>
+
+      <div id="btn">
+
+        <button id="btn1" class="rubik">Daily</button>
+        <br>
+        <button id="btn2" class="rubik">Weekly</button>
+        <br>
+        <button id="btn3" class="rubik">Monthly</button>
+
+      </div>
+
+    </div>
+
+    <div id="work">
+
+      <div id="work-info" class="inner-info">
+
+        <div class="title">
+
+          <span>Work</span>
+
+          <img class="icon-ellipsis" src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
+
+        </div>
+
+        <div class="time-zone">
+
+          <h1 class="time" id="work-time"></h1>
+
+          <span class="previous-time" id="work-previous"></span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id="play">
+
+      <div id="play-info" class="inner-info">
+
+        <div class="title">
+
+          <span>Play</span>
+
+          <img class="icon-ellipsis" src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
+
+        </div>
+
+        <div class="time-zone">
+
+          <h1 class="time" id="play-time"></h1>
+
+          <span class="previous-time" id="play-previous"></span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id="study">
+
+      <div id="study-info" class="inner-info">
+
+        <div class="title">
+
+          <span>Study</span>
+
+          <img class="icon-ellipsis" src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
+
+        </div>
+
+        <div class="time-zone">
+
+          <h1 class="time" id="study-time"></h1>
+
+          <span class="previous-time" id="study-previous"></span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id="exercise">
+
+      <div id="exercise-info" class="inner-info">
+
+        <div class="title">
+
+          <span>Exercise</span>
+
+          <img class="icon-ellipsis" src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
+
+        </div>
+
+        <div class="time-zone">
+
+          <h1 class="time" id="exercise-time"></h1>
+
+          <span class="previous-time" id="exercise-previous"></span>
+
+          </div>
+
+      </div>
+
+    </div>
+
+    <div id="social">
+
+      <div id="social-info" class="inner-info">
+
+        <div class="title">
+
+          <span>Social</span>
+
+          <img class="icon-ellipsis" src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
+
+        </div>
+
+        <div class="time-zone">
+
+          <h1 class="time" id="social-time"></h1>
+
+          <span class="previous-time" id="social-previous"></span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id="selfcare">
+
+      <div id="selfcare-info" class="inner-info">
+
+        <div class="title">
+
+          <span>Self Care</span>
+
+          <img class="icon-ellipsis" src="./images/icon-ellipsis.svg" alt="icon-ellipsis">
+
+        </div>
+
+        <div class="time-zone">
+
+          <h1 class="time" id="selfcare-time"></h1>
+
+          <span class="previous-time" id="selfcare-previous"></span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/aissur320">aissur320</a>.
+    </div>
+  </footer>
+
+  <script src="./JS.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,212 @@
+:root{
+    --purple600: hsl(246, 80%, 60%);
+    --orange300: hsl(15, 100%, 70%);
+    --blue300: hsl(195, 74%, 62%);
+    --pink400: hsl(348, 100%, 68%);
+    --green400: hsl(145, 58%, 55%);
+    --purple700: hsl(264, 64%, 52%);
+    --yellow300: hsl(43, 84%, 65%);
+    --navy950: hsl(226, 43%, 10%);
+    --navy900: hsl(235, 46%, 20%);
+    --navy850: hsl(236, 31%, 32%);
+    --purple500: hsl(235, 45%, 61%);
+    --navy200: hsl(236, 100%, 87%);
+}
+
+.rubik {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+body{
+    background-color: var(--navy950);
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main{
+    background-color: var(--navy950);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    /* top: 15vh; */
+    width: 70%;
+    height: 75vh;
+    gap: 20px;
+}
+
+#head-info{
+    grid-row: 1 / -1;
+    grid-column: 1;
+    background-color: var(--navy900);
+    border-radius: 10px;
+}
+
+#head-info > #btn{
+    padding: 20px;
+}
+
+#btn > button{
+    background-color: var(--navy900);
+    color: var(--navy200);
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+#btn > button:hover{
+    color: white;
+}
+
+#user{
+    background-color: var(--purple600);
+    border-radius: 10px;
+    width: 100%;
+    height: 70%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#user-avatar{
+    width: 40%;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-bottom: 30px;
+}
+
+#report{
+    color: var(--navy200);
+}
+
+#user-name{
+    color: white;
+    font-size: 35px;
+    font-weight: 300;
+}
+
+#work,
+#play,
+#study,
+#exercise,
+#social,
+#selfcare{
+    background-repeat: no-repeat;
+    background-position: top -10px right 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%; 
+}
+
+.inner-info{
+    width: 100%;
+    height: 80%;
+    box-sizing: border-box;
+    background-color: var(--navy900);
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.inner-info:hover{
+    background-color: var(--navy850);
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title > span{
+    color: white;
+    font-weight: 500;
+}
+
+.time{
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.previous-time{
+    color: var(--navy200);
+}
+
+#work{
+    background-color: var(--orange300);
+    background-image: url("./images/icon-work.svg");
+}
+
+#play{
+    background-color: var(--blue300);
+    background-image: url("./images/icon-play.svg");
+}
+
+#study{
+    background-color: var(--pink400);
+    background-image: url("./images/icon-study.svg");
+}
+
+#exercise{
+    background-color: var(--green400);
+    background-image: url("./images/icon-exercise.svg");
+    background-position: top 0px right 15px;
+}
+
+#social{
+    background-color: var(--purple700);
+    background-image: url("./images/icon-social.svg");
+}
+
+#selfcare{
+    background-color: var(--yellow300);
+    background-image: url("./images/icon-self-care.svg");
+}
+
+@media(max-width: 768px){
+    #main{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, 1fr);
+        width: 90%;
+        height: auto;
+    }
+
+    #user{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #user-avatar{
+        width: 20%;
+        height: fit-content;
+        margin-right: 15px;
+    }
+
+    #user-name{
+        color: white;
+        font-size: 30px;
+        font-weight: 300;
+    }
+
+    #btn{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .time-zone{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
+
